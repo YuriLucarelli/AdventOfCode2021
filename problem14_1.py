@@ -17,9 +17,6 @@ def main():
     for i in range(1,len(sequence)):
         pairs[sequence[i-1:i+1]] += 1
 
-    for i in pairs.keys():
-        if pairs[i] != 0: print(i,pairs[i])
-
     for q in range(40):
         new_pairs = { key : 0 for key in pairs.keys()}
 
